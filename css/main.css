@@ -1,0 +1,103 @@
+/* font-family: 'Pacifico', cursive; */
+/* <==================global===================> */
+
+*,*::before,*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F7ECDE;
+}
+
+main{
+    width: 85%;
+}
+
+.line{
+    border-width:2px 0 0 0 ;
+    border-style: dotted;
+    color: #352e28;
+    
+}
+/* <==================global===================> */
+
+
+/* <==================================HeaderSection===================> */
+.header h1{
+font-family: 'Pacifico', cursive;
+Color:rgb(53, 46, 40);
+font-size: 50px;
+position: relative;
+width: fit-content;
+margin-inline: auto;
+}
+
+h1::before{
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 35%;
+   background-color: #FEC260;
+   z-index:-1;
+   transition-duration: .5s;
+}
+
+.header:hover h1::before{
+    height: 80%;
+}
+
+/* <==================================HeaderSection==========================> */
+
+/* <==================================Section2==========================> */
+.section2 h2 {
+    font-family: 'Righteous', cursive;
+    font-size: 25px;
+    background: linear-gradient(to right , #3ca55c, #b5ac49 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.section2 input:focus,.input:focus{
+    box-shadow: 0 0 0 3px #FADEB4;
+    border: 1px solid  #f8a62c;
+}
+
+.section2 button{
+  background-color:#db4a22;
+  color: white;
+  padding: 6px 48px;
+  border-radius: 7px;
+  font-size: 20px;
+  border: none;
+}
+
+.section2 button:hover{
+    background-color: #BB4120;
+}
+/*<==================================Section2==========================> */
+
+/* <==================================Section3==========================> */
+ .section3 table .hover a{
+    text-decoration: none;
+    color: #FFC107;
+} 
+
+.section3 table .hover:hover a {
+    color: black;
+}
+/* <==================================Section3==========================> */
+
+
+
+
+
+
+
+
+
+
+
+

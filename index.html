@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <link rel="icon" href="./img/bookmark-svgrepo-com.svg">
+
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya&family=Amatic+SC:wght@400;700&family=Dancing+Script:wght@700&family=Kablammo&family=Kalam:wght@300;400&family=Mynerve&family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:wght@300;400;500;600;700;800&family=PT+Sans+Caption&family=Pacifico&family=Righteous&family=Source+Sans+3:wght@200;400;500;600;700;800;900&family=Special+Elite&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya&family=Amatic+SC:wght@400;700&family=Dancing+Script:wght@700&family=Kablammo&family=Kalam:wght@300;400&family=Mynerve&family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:wght@300;400;500;600;700;800&family=Pacifico&family=Source+Sans+3:wght@200;400;500;600;700;800;900&family=Special+Elite&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <main class="mx-auto ">
+
+        <section class="header text-center mt-5 mb-4 " >
+            <h1 class="mb-5">Bookmarker</h1>
+            <div class="line"></div>
+        </section>
+
+        <section class="section2">
+            <h2 class="text-center">
+                <i class="fa-solid fa-bookmark"></i>
+                Bookmark your favorite sites
+                <i class="fa-solid fa-bookmark"></i>
+            </h2>
+
+            <div class="form-input mt-4">
+                <label for="siteName"><i class="fa-solid fa-book-bookmark pe-2"></i> Site Name</label>
+                <input type="text" id="siteName" placeholder="Bookmark Name" class="form-control">
+            </div>
+
+            <div class="form-input mt-4">
+                <label for="siteURL"><i class="fa-solid fa-book-bookmark pe-2"></i> Site URL</label>
+                <input type="url" id="siteURL" placeholder="Website URL" class="form-control">
+            </div>
+
+            <div class="text-center my-4">
+                <button onclick="addSite()">Submit</button>
+            </div>
+
+            <div class="line mb-4"></div>     
+        </section>
+        
+        <input type="text" class="input w-75 mx-auto mb-4 form-control" placeholder="Search...." id="searchInput" oninput="searchSite()">
+
+        <section class="section3">
+            <table class="table">
+                <thead>
+                    <tr class="text-center">
+                        <th>Index</th>
+                        <th>Website Name</th>
+                        <th>Visit</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+
+                <tbody id="tableData">
+                    
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
+
+
+
+
+
